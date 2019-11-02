@@ -21,7 +21,7 @@ const Welcome = () => {
         </div>
         <Space m />
         <h2>
-          键盘不能停，不然所有内容都会丢失...<i className="caret icon-cursor" />
+          键盘不能停，否则你会失去所有...<i className="caret icon-cursor" />
         </h2>
         <Space xl />
         <WriteButton ghost color="red" />
@@ -30,5 +30,5 @@ const Welcome = () => {
     </div>
   )
 }
-
+//全屏模式下选择重新开始，会出bug
 export default Welcome;
