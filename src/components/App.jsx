@@ -62,7 +62,8 @@ export default class WritingApp extends React.Component {
   handleStroke(char, text) {
     if (!this.state.run && !this.state.won) this.startWriting();
     this.toggleDanger(false);
-    const words = text.trim().length && text.trim().split(/\s+/).length;
+    const words = text.trim().length && text.trim().length;
+    //const words =text.trim().length && text.trim().split(/\s+/).length;
     this.setState({
       text,
       words,
@@ -178,7 +179,8 @@ export default class WritingApp extends React.Component {
                 {
                   won
                   ? <WriteButton small ghost hidePanel label="Start Again" {...{limit, type, hardcore}} />
-                  : <WordCount />
+                  : 
+                  <WordCount />
                 }
               </div>
             )}

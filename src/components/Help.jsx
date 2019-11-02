@@ -43,83 +43,40 @@ const Help = () => {
   return (
     <div className="Help">
       <Link to="/" className="navButton backButton">
-        Back
+        返回
       </Link>
       <Space l />
       <div className="content">
         <div className="logo small">
           <div className="mark" />
           <h1>
-            <span>The Most</span>
-            <span>Dangerous</span>
+            <span>最</span>
+            <span>心流</span>
             <span>
-              Writing App
+              写作
               <i className="caret icon-cursor" />
             </span>
           </h1>
         </div>
 
-        <h1>Help</h1>
-        <h2>What's the point?</h2>
+        <h1>帮助文档</h1>
+        <h2>这个网页能干啥?</h2>
         <p>
-          The Most Dangerous Writing App is designed to shut down your inner
-          editor and get you into a state of flow. If you stop typing for more
-          than five seconds, all progress will be lost. After typing without
-          interruption for the length of your session, you'll be able to save
-          your work.
+          最心流写作被设计来关闭你内心的编辑器，让你进入一种写作的心流状态，如果你一旦
+          超过五秒没有进行编辑，之前所有的内容都将丢失，在你设置写作时间结束并且中途没
+          有打扰之后，你能下载并保存你的写作内容
         </p>
         <p>
-          Because 'tis better to have written and lost, than never to have
-          written at all.
+        尝试之后失败，总比完全不做要强！
         </p>
 
         <Space m />
         <WriteButton ghost color="red" />
 
-        <h2>Word on the street?</h2>
-
+        <h2>别人能读到我写的东西吗?</h2>
         <p>
-          <abbr title="The Most Dangerous Writing App">MDWA</abbr> has been
-          featured on&nbsp;
-          <a
-            href="http://www.wired.com/2016/03/sadistic-writing-app-deletes-work-stop-typing/"
-            title="Wired"
-          >
-            Wired
-          </a>
-          ,&nbsp;
-          <a
-            href="http://lifehacker.com/the-most-dangerous-writing-app-destroys-your-progress-1762981262"
-            title="Lifehacker"
-          >
-            Lifehacker
-          </a>
-          ,&nbsp;
-          <a
-            href="http://thenextweb.com/apps/2016/03/07/this-writing-app-will-delete-your-work-if-you-stop-typing/"
-            title="The Next Web"
-          >
-            The Next Web
-          </a>
-          ,&nbsp;
-          <a
-            href="http://www.huffingtonpost.com/2016/03/07/the-most-dangerous-writing-app-is-a-terrifying-productivity-tool_n_9399844.html"
-            title="Huffington Post"
-          >
-            Huffington Post
-          </a>
-          ,&nbsp;
-          <a
-            href="https://me.popsugar.com/technology/Why-Most-Dangerous-Writing-App-Make-You-More-Productive-40420571"
-            title="PopSugar"
-          >
-            PopSugar
-          </a>
-          , and many, many other outlets. Here's what some people have to say:
+          不能，你所有的写作都是私人的，不会上传或存储到任何服务器中。
         </p>
-
-        {quotes.map(quote => renderQuote(quote))}
-
         <h2>Who made this?</h2>
         <p>
           <i className="icon-mdwa" />{" "}
@@ -150,35 +107,6 @@ const Help = () => {
           This is the the original version of the app, which will continue to be available at <a href="https://maebert.github.io/themostdangerouswritingapp">maebert.github.io/themostdangerouswritingapp</a>.
         </p>
 
-
-        <h2>Can anybody read what I write?</h2>
-        <p>
-          No, all your writing is private and not submitted to or stored on any
-          server.
-        </p>
-
-        <h2>Press Kit</h2>
-        <p>
-          If you would like to write about{" "}
-          <abbr title="The Most Dangerous Writing App">MDWA</abbr>, please use
-          the media in the <a href="MDWA Press Kit.zip">press kit</a> provided.{" "}
-        </p>
-        <p>
-          I'm happy to answer your questions over{" "}
-          <a href="mailto:manuel@1450.me?subject=The%20Most%20Dangerous%20Writing%20App">
-            e-mail
-          </a>{" "}
-          or{" "}
-          <a
-            href="https://www.twitter.com/maebert"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Manuel Ebert"
-          >
-            twitter
-          </a>
-          , too.
-        </p>
 
         <Space l />
       </div>

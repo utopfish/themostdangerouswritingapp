@@ -98,7 +98,7 @@ export default class Editor extends Component {
         >
           {hardcore && <div className="hardcore" >{this.state.letter}</div> }
           <textarea
-            placeholder="Start typing..."
+            placeholder="开始写..."
             spellCheck="false"
             onKeyDown={this.onStroke}
             onChange={this.onChange}

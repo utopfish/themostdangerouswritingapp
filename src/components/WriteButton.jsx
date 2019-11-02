@@ -29,7 +29,7 @@ export default class WriteButton extends React.Component {
     return (
       <div className="session-chooser">
         <div className="compact"  onClick={ this.onExpand }>
-          Session length:
+          写作长度:
           <span className="choice">{limit} {type} <i className="edit icon-pencil"></i></span>
 
         </div>
@@ -66,14 +66,14 @@ export default class WriteButton extends React.Component {
       <div className="session-chooser">
         <div className={classes}>
           <div className="tabs">
-              <span className="minutes" onClick={() => this.setType("minutes")}>Minutes</span>
+              <span className="minutes" onClick={() => this.setType("minutes")}>分钟</span>
               &nbsp;/&nbsp;
-              <span className="words" onClick={() => this.setType("words")}>Words</span>
+              <span className="words" onClick={() => this.setType("words")}>字数</span>
           </div>
           <div className="radios">
             { this.renderOptions() }
           </div>
-            <div onClick={this.toggleHardcore} className={classNames('hardcore', {checked: this.state.hardcore})}>Hardcore mode</div>
+            <div onClick={this.toggleHardcore} className={classNames('hardcore', {checked: this.state.hardcore})}>硬核模式</div>
         </div>
       </div>
     )
@@ -105,7 +105,7 @@ export default class WriteButton extends React.Component {
 }
 
 WriteButton.defaultProps = {
-  label: "Start Writing",
+  label: "开始写作",
   small: false,
   hidePanel: false,
   limits: {
